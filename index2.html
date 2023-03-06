@@ -13,6 +13,7 @@
       <!-- Font-css  -->
       <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
       <!-- Bootstrap CSS -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <title>Marketlight</title>
@@ -40,6 +41,7 @@
                 </svg></a>
             </div>
             <div id="myNav" class="overlay" style="width: 0%;">
+               <div class="cursor1"></div>
                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="las la-times"></i></a>
                 <ul class="overlay-content navbar-nav">
                   <li class="nav-item">
@@ -48,7 +50,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Our Service</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a class="nav-link" href="#">What We Do</i></a>
                   </li>
                   <li class="nav-item">
@@ -105,25 +107,31 @@
                </div>
                <div class="row mt-4">
                   <div class="col-sm-12 col-md-6 col-lg-6">
-                     <div class="grow-icon">
+                     <div class="mydiv grow-icon">
+                        <img src="img/Strenghten_icon_loop-1.gif" class="gifs-img img-fluid" alt="grow-icon">
+                     </div>
+                     <!-- <div class="mydiv grow-icon" id="divtwo">
                         <img src="img/grow-icon_loop-1.gif" class="gifs-img img-fluid" alt="grow-icon">
                      </div>
+                     <div class="mydiv grow-icon" id="divthree">
+                        <img src="img/boost_icon_loop.gif" class="gifs-img img-fluid" alt="grow-icon">
+                     </div> -->
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6">
                      <div class="right-sec">
-                        <div class="grow-links">
+                        <div imgsrc="img/Strenghten_icon_loop-1.gif" class="mymultiplediv grow-links">
                            <a href="javascript:void(0);" class="grow_link">
                               <h2>strengthen​</h2>
                               <h3>your brand</h3>
                            </a>
                         </div>
-                        <div class="grow-links">
+                        <div imgsrc="img/grow-icon_loop-1.gif" class="mymultiplediv grow-links">
                            <a href="javascript:void(0);" class="grow_link">
                               <h2>grow</h2>
                               <h3>your businesses</h3>
                            </a>
                         </div>
-                        <div class="grow-links">
+                        <div imgsrc="img/boost_icon_loop.gif" class="mymultiplediv grow-links">
                            <a href="javascript:void(0);" class="grow_link">
                               <h2>boost</h2>
                               <h3>your enrolment</h3>
@@ -141,7 +149,7 @@
                </div>
             </div>
          </section>
-         <section class="section our-promise" id="sec3">
+         <section class="section our-promise scrollable-content" id="sec3">
             <div class="container">
                <div class="row">
                   <div class="col-lg-6">
@@ -150,7 +158,7 @@
                         <h2 class="heading-text">Delivering our best effort</h2>
                      </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 scroll_rgtcol">
                      <div class="ttb-scrl">
                         <div class="left_wrap">
                            <div class="left-wrap-img"><img src="img/responsive-icon-gif.gif"></div>
@@ -226,7 +234,8 @@
          </section>
          <section class="section explore" id="sec5">
             <div class="container">
-               <div class="row">
+               <div class="row ss">
+                  <div class="cursor2"></div>
                   <div class="col-lg-6 text-center rgt-line spc">
                      <div class="content_area">
                         <h2 class="heading-text">Explore Marketing</h2>
@@ -260,6 +269,10 @@
                </div>
             </div>
          </section>
+         <!-- <section class="section hh" id="sec6">
+            <div class="title">Hover Me</div>
+            <div class="cursor"></div>
+         </section> -->
          <section class="section footer">
             <div class="container">
                <div class="row mb-4">
@@ -275,6 +288,7 @@
                   </div>
                </div>
                <div class="row t-spc">
+                  <div class="cursor"></div>
                   <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
                      <img src="img/Group-58-p4ea6btfshmurpt65mdwo3ficrxtdidyj0zc8h6byo.png" alt="marketlight-logo">
                   </div>
@@ -292,45 +306,59 @@
                      </div>
                   </div>
                   <div class="col-sm-12 col-md-4 col-lg-4 mb-4 text-lg-right">
-                     <ul class="footer_icon p-0">
-                        <li>
-                           <a href="javascript:void(0);" class="cursor">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                 <path d="M28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 20.9877 5.11957 26.7796 11.8125 27.8299V18.0469H8.25781V14H11.8125V10.9156C11.8125 7.40688 13.9027 5.46875 17.1005 5.46875C18.6318 5.46875 20.2344 5.74219 20.2344 5.74219V9.1875H18.4691C16.73 9.1875 16.1875 10.2668 16.1875 11.375V14H20.0703L19.4496 18.0469H16.1875V27.8299C22.8804 26.7796 28 20.9877 28 14Z" fill="white"></path>
-                                 <path d="M19.4496 18.0469L20.0703 14H16.1875V11.375C16.1875 10.2679 16.73 9.1875 18.4691 9.1875H20.2344V5.74219C20.2344 5.74219 18.6323 5.46875 17.1005 5.46875C13.9027 5.46875 11.8125 7.40688 11.8125 10.9156V14H8.25781V18.0469H11.8125V27.8299C13.262 28.0567 14.738 28.0567 16.1875 27.8299V18.0469H19.4496Z" fill="#050D1F"></path>
-                              </svg>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="javascript:void(0);" class="cursor">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                 <path d="M8.80544 25.3757C19.3715 25.3757 25.1507 16.6218 25.1507 9.03044C25.1507 8.7818 25.1507 8.53429 25.1339 8.28789C26.2582 7.47467 27.2287 6.46775 28 5.31428C26.9516 5.77909 25.8394 6.08376 24.7005 6.21812C25.8998 5.50026 26.7973 4.37104 27.2261 3.04068C26.0984 3.70989 24.8647 4.18148 23.5782 4.43508C22.7121 3.51409 21.5666 2.90423 20.3189 2.69988C19.0712 2.49553 17.791 2.70808 16.6763 3.30465C15.5616 3.90121 14.6746 4.84852 14.1525 5.99999C13.6305 7.15146 13.5025 8.44289 13.7883 9.67444C11.5044 9.55987 9.27005 8.96631 7.23036 7.93229C5.19068 6.89826 3.39122 5.44689 1.9488 3.67236C1.21418 4.93703 0.989184 6.43413 1.31962 7.85886C1.65005 9.28358 2.51107 10.5288 3.72736 11.341C2.8131 11.3142 1.91876 11.0676 1.12 10.622V10.6948C1.12036 12.0211 1.57949 13.3065 2.41952 14.3329C3.25954 15.3593 4.42874 16.0635 5.7288 16.3261C4.88306 16.5568 3.99569 16.5905 3.13488 16.4247C3.50212 17.5661 4.21683 18.5642 5.17911 19.2794C6.14139 19.9947 7.30313 20.3914 8.50192 20.4141C7.31084 21.3503 5.94687 22.0425 4.48802 22.4511C3.02917 22.8597 1.50408 22.9766 0 22.7952C2.62714 24.4811 5.68391 25.3753 8.80544 25.3712" fill="white"></path>
-                              </svg>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="javascript:void(0);" class="cursor">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                 <g clip-path="url(#clip0)">
-                                    <path d="M25.9331 0H2.06694C1.51876 0 0.993022 0.217767 0.605394 0.605394C0.217767 0.993022 0 1.51876 0 2.06694V25.9331C0 26.4812 0.217767 27.007 0.605394 27.3946C0.993022 27.7822 1.51876 28 2.06694 28H25.9331C26.4812 28 27.007 27.7822 27.3946 27.3946C27.7822 27.007 28 26.4812 28 25.9331V2.06694C28 1.51876 27.7822 0.993022 27.3946 0.605394C27.007 0.217767 26.4812 0 25.9331 0ZM8.34556 23.8525H4.13583V10.4806H8.34556V23.8525ZM6.23778 8.6275C5.76026 8.62481 5.29423 8.48073 4.89852 8.21344C4.50281 7.94614 4.19515 7.56762 4.01436 7.12564C3.83357 6.68365 3.78776 6.19802 3.8827 5.73003C3.97765 5.26204 4.2091 4.83266 4.54785 4.49608C4.88659 4.1595 5.31745 3.93081 5.78604 3.83887C6.25464 3.74693 6.73996 3.79586 7.18078 3.97948C7.62159 4.16311 7.99813 4.47319 8.26288 4.87061C8.52762 5.26803 8.66871 5.73497 8.66833 6.2125C8.67284 6.53221 8.61293 6.84955 8.49218 7.14561C8.37143 7.44166 8.19231 7.71038 7.9655 7.93574C7.73869 8.16111 7.46882 8.3385 7.17199 8.45734C6.87517 8.57619 6.55745 8.63406 6.23778 8.6275ZM23.8622 23.8642H19.6544V16.5589C19.6544 14.4044 18.7386 13.7394 17.5564 13.7394C16.3081 13.7394 15.0831 14.6806 15.0831 16.6133V23.8642H10.8733V10.4903H14.9217V12.3433H14.9761C15.3825 11.5208 16.8058 10.115 18.9778 10.115C21.3267 10.115 23.8642 11.5092 23.8642 15.5925L23.8622 23.8642Z" fill="white"></path>
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0">
-                                       <rect width="28" height="28" fill="white"></rect>
-                                    </clipPath>
-                                 </defs>
-                              </svg>
-                           </a>
-                        </li>
-                     </ul>
+                    
+                     <div class="social-icons">
+                       
+                        <ul class="footer_icon p-0">
+                           <li class="s_icons">
+                              <a href="javascript:void(0);" class="social-icons">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path class="bg" d="M28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 20.9877 5.11957 26.7796 11.8125 27.8299V18.0469H8.25781V14H11.8125V10.9156C11.8125 7.40688 13.9027 5.46875 17.1005 5.46875C18.6318 5.46875 20.2344 5.74219 20.2344 5.74219V9.1875H18.4691C16.73 9.1875 16.1875 10.2668 16.1875 11.375V14H20.0703L19.4496 18.0469H16.1875V27.8299C22.8804 26.7796 28 20.9877 28 14Z" fill="white"></path>
+                                    <path class="dark fb" d="M19.4496 18.0469L20.0703 14H16.1875V11.375C16.1875 10.2679 16.73 9.1875 18.4691 9.1875H20.2344V5.74219C20.2344 5.74219 18.6323 5.46875 17.1005 5.46875C13.9027 5.46875 11.8125 7.40688 11.8125 10.9156V14H8.25781V18.0469H11.8125V27.8299C13.262 28.0567 14.738 28.0567 16.1875 27.8299V18.0469H19.4496Z" fill="#050D1F"></path>
+                                 </svg>
+                              </a>
+                           </li>
+                           <li class="s_icons">
+                              <a href="javascript:void(0);" class="social-icons">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path class="dark" d="M8.80544 25.3757C19.3715 25.3757 25.1507 16.6218 25.1507 9.03044C25.1507 8.7818 25.1507 8.53429 25.1339 8.28789C26.2582 7.47467 27.2287 6.46775 28 5.31428C26.9516 5.77909 25.8394 6.08376 24.7005 6.21812C25.8998 5.50026 26.7973 4.37104 27.2261 3.04068C26.0984 3.70989 24.8647 4.18148 23.5782 4.43508C22.7121 3.51409 21.5666 2.90423 20.3189 2.69988C19.0712 2.49553 17.791 2.70808 16.6763 3.30465C15.5616 3.90121 14.6746 4.84852 14.1525 5.99999C13.6305 7.15146 13.5025 8.44289 13.7883 9.67444C11.5044 9.55987 9.27005 8.96631 7.23036 7.93229C5.19068 6.89826 3.39122 5.44689 1.9488 3.67236C1.21418 4.93703 0.989184 6.43413 1.31962 7.85886C1.65005 9.28358 2.51107 10.5288 3.72736 11.341C2.8131 11.3142 1.91876 11.0676 1.12 10.622V10.6948C1.12036 12.0211 1.57949 13.3065 2.41952 14.3329C3.25954 15.3593 4.42874 16.0635 5.7288 16.3261C4.88306 16.5568 3.99569 16.5905 3.13488 16.4247C3.50212 17.5661 4.21683 18.5642 5.17911 19.2794C6.14139 19.9947 7.30313 20.3914 8.50192 20.4141C7.31084 21.3503 5.94687 22.0425 4.48802 22.4511C3.02917 22.8597 1.50408 22.9766 0 22.7952C2.62714 24.4811 5.68391 25.3753 8.80544 25.3712" fill="white"></path>
+                                 </svg>
+                              </a>
+                           </li>
+                           <li class="s_icons">
+                              <a href="javascript:void(0);" class="social-icons">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <g clip-path="url(#clip0)">
+                                       <path class="dark" d="M25.9331 0H2.06694C1.51876 0 0.993022 0.217767 0.605394 0.605394C0.217767 0.993022 0 1.51876 0 2.06694V25.9331C0 26.4812 0.217767 27.007 0.605394 27.3946C0.993022 27.7822 1.51876 28 2.06694 28H25.9331C26.4812 28 27.007 27.7822 27.3946 27.3946C27.7822 27.007 28 26.4812 28 25.9331V2.06694C28 1.51876 27.7822 0.993022 27.3946 0.605394C27.007 0.217767 26.4812 0 25.9331 0ZM8.34556 23.8525H4.13583V10.4806H8.34556V23.8525ZM6.23778 8.6275C5.76026 8.62481 5.29423 8.48073 4.89852 8.21344C4.50281 7.94614 4.19515 7.56762 4.01436 7.12564C3.83357 6.68365 3.78776 6.19802 3.8827 5.73003C3.97765 5.26204 4.2091 4.83266 4.54785 4.49608C4.88659 4.1595 5.31745 3.93081 5.78604 3.83887C6.25464 3.74693 6.73996 3.79586 7.18078 3.97948C7.62159 4.16311 7.99813 4.47319 8.26288 4.87061C8.52762 5.26803 8.66871 5.73497 8.66833 6.2125C8.67284 6.53221 8.61293 6.84955 8.49218 7.14561C8.37143 7.44166 8.19231 7.71038 7.9655 7.93574C7.73869 8.16111 7.46882 8.3385 7.17199 8.45734C6.87517 8.57619 6.55745 8.63406 6.23778 8.6275ZM23.8622 23.8642H19.6544V16.5589C19.6544 14.4044 18.7386 13.7394 17.5564 13.7394C16.3081 13.7394 15.0831 14.6806 15.0831 16.6133V23.8642H10.8733V10.4903H14.9217V12.3433H14.9761C15.3825 11.5208 16.8058 10.115 18.9778 10.115C21.3267 10.115 23.8642 11.5092 23.8642 15.5925L23.8622 23.8642Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                       <clipPath id="clip0">
+                                          <rect width="28" height="28" fill="white"></rect>
+                                       </clipPath>
+                                    </defs>
+                                 </svg>
+                              </a>
+                           </li>
+                           
+                        </ul>
+                        
+                     </div>
+                     
                   </div>
+                  
                </div>
             </div>
+           
          </section>
       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://alvarotrigo.com/fullPage/vendors/scrolloverflow.js"></script>
+      <!-- <script src="js/fullpage.js"></script> -->
+      <!-- <script src="https://alvarotrigo.com/fullPage/fullpage.js"></script> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      
       <script>
          function openNav() {
            document.getElementById("myNav").style.width = "100%";
@@ -341,17 +369,48 @@
            document.getElementById("myNav").style.width = "0%";
            document.getElementById("myNav").style.opacity = "0";
          }
-      </script>
-      <script>
+     
+         // $(window).scroll( function()
+         // {
+         //    document.getElementsByClassName("section").style.opacity = "0";
+         // });
+         
+      
          // new fullpage('#fullpage', {
          //   sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
          //   scrollOverflow: true,
          //   normalScrollElements: '.scrollable-content'
          // });
-         $('#fullpage').fullpage();
+         $('#fullpage').fullpage(
+            {
+               scrollingSpeed: 1000,
+               css3: true,
+               fadingEffect: true,
+               scrollOverflow: true,
+               navigation: true,
+               slidesNavigation: true,
+               // normalScrollElements: '.scrollable-content'
+               // setMouseWheelScrolling: 'true'
+            }
+         );
          $.fn.fullpage.setMouseWheelScrolling(false);
          $.fn.fullpage.setAllowScrolling(false);
          
+         /*---Pass-active class on Menus-js---*/
+         $(document).ready(function(){
+         $('.navbar-nav li.nav-item').click(function(){
+            $('li.nav-item').removeClass("active");
+            $(this).addClass("active");
+         });
+         });
+         /*---Chnage attribute values on hover---*/
+         $(document).ready(function(){
+            $('.grow-links').mouseover(function() {
+               let target = $('.gifs-img');
+               let imgSrc = $(this).attr('imgsrc');
+               target.attr('src',imgSrc);
+            });
+         });
          /*---lightup button---*/
          $('.click-here').on('click', function()
          {       
@@ -373,16 +432,87 @@
              else sticky.removeClass('fixed');
          });
          /*---Top2Bottom scroll---*/
-         jQuery('#fp-nav ul li').each(function(i)
+         $('#fp-nav ul li').each(function(i)
             {
                 if ( i === 0 ){
-                  jQuery(this).addClass('scroll-set');
+                  $(this).addClass('scroll-set');
                   } 
               }); 
           $(document).on("click", ".scrollTops", function()
             {
-              jQuery('#fp-nav ul li.scroll-set').find('a').trigger('click'); 
+              $('#fp-nav ul li.scroll-set').find('a').trigger('click'); 
             });
-      </script>
+       
+         /*  OnMouse Cursor1  hover in Tops menus */
+       
+            let curs = document.querySelector('.cursor1');
+            document.addEventListener('mousemove', (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+            curs.style.left = (x - 20) + "px";
+            curs.style.top = (y - 20) + "px";
+            curs.style.opacity = "1"
+            })
+            $('.nav-item').hover(function()
+               {
+                  $('.cursor1').addClass('active');
+               },
+               function()
+               {
+                  $('.cursor1').removeClass('active');
+
+               },
+            );
+        
+            //OnMouse Cursor2 hover in Explore Marketing
+            let curs2 = document.querySelector('.cursor2');
+            document.addEventListener('mousemove', (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+            curs2.style.left = (x - 20) + "px";
+            curs2.style.top = (y - 20) + "px";
+            curs2.style.opacity = "1"
+            });
+            
+            $('.explore-link').hover(function()
+               {
+                  $(this).parents('.ss').find('.cursor2').addClass('active');
+                  $(this).parents('.content_area').find('.border-img').css("opacity", "0" );
+                  $(this).parents('.content_area').find('.descp').css("color", "#000");
+               },
+               function()
+               {
+                  $(this).parents('.ss').find('.cursor2').removeClass('active');
+                  $(this).parents('.content_area').find('.border-img').css("opacity", "1" );
+                  $(this).parents('.content_area').find('.descp').css("color", "#1E66F7");
+               },
+            );
+             //OnMouse Cursor hover in Footer-icons effect
+            let curs3 = document.querySelector('.cursor');
+            document.addEventListener('mousemove', (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+            curs3.style.left = (x - 20) + "px";
+            curs3.style.top = (y - 20) + "px";
+            curs3.style.opacity = "1"
+            });
+            $('.s_icons').hover(function()
+               {
+                  $('.cursor').addClass('active');
+                  $(this).find('a.social-icons .dark').addClass('dark2')
+                  /*for fb-icon--*/
+                  $(this).find('a.social-icons .fb').addClass('active')
+                  $(this).find('a.social-icons .bg').addClass('active')
+               },
+               function()
+               {
+                  $('.cursor').removeClass('active');
+                  $(this).find('a.social-icons .dark').removeClass('dark2')
+                  /*for fb-icon--*/
+                  $(this).find('a.social-icons .fb').removeClass('active')
+                  $(this).find('a.social-icons .bg').removeClass('active')
+               },  
+            );
+         </script>
    </body>
 </html>
